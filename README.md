@@ -38,6 +38,9 @@ dkk dkk dkk dkk dkk dkk dkk dkk dkk dkk kdd ddk ddk dkd dkd dkd dkd dkd dkd dkd
 dkd dkd dkd dkd dkd dkd dkd dkd kdd ddd kdd dkd dkd dkd kdd dkk dkk dkk dkk dkk
 dkk kdd dkk dkk dkk dkk dkk dkk dkk dkk kdd ddd dkd kdd
 ```
+
+The full code in the form of an osu!taiko map can be viewed [here](https://twitter.com/ye_osu/status/1487819314124103681?s=20&t=W3yS92ToHIEd26ftLNKEiQ) in my Tweet.
+
 #### Output
 `Hello, World!`
 
