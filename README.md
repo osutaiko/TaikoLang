@@ -1,8 +1,8 @@
 # TaikoLang
-An Esoteric Programming Language Using "Taiko" maps, Based on Brainfuck.
+An esoteric programming language using Taiko no Tatsujin (太鼓の達人) maps, based on Brainf*ck.
 
 ## Language Design
-TaikoLang consists of eight commands, listed below. Code written in TaikoLang can be perfectly interchangeable with a Brainfuck script. Each command is 3 notes long, regardless of timing and spacing. All sliders and spinners are omitted.
+TaikoLang consists of eight commands, listed below. Scripts written in TaikoLang is interchangeable with an equivalent Brainf*ck script. Each command is 3 notes long, regardless of timing and spacing. All sliders and spinners will be omitted.
 
 ### Storage
 - A single array of 32,768 cells, each having a boundary of [0, 255]. This boundary is equivalent to the `unsigned char` type in C/C++.
@@ -44,7 +44,7 @@ The full code in the form of an osu!taiko map can be viewed [here](https://twitt
 #### Output
 `Hello, World!`
 
-#### Brainfuck Equivalent
+#### In Brainf*ck
 The TaikoLang code is equivalent to the following Brainfuck script:
 ```
 ++++++++++
