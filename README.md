@@ -6,7 +6,7 @@ TaikoLang consists of eight commands, listed below. Scripts written in TaikoLang
 
 ### Storage
 - A single array of 32,768 cells, each having a boundary of [0, 255]. This boundary is equivalent to the `unsigned char` type in C/C++.
-- A data pointer, having a soft boundary of [0, 32767]. However, the value of the data pointer is commonly stored as an `int` type.
+- A data pointer, having a soft boundary of [0, 32767]. However, the value of the data pointer is commonly stored as an `int` type, and will be dealed as such in this implementation.
 
 ### Commands
 | Command | Conventional Taiko Notation | Brainfuck Equivalent | Function |
@@ -22,8 +22,16 @@ TaikoLang consists of eight commands, listed below. Scripts written in TaikoLang
 
 ### Note
 - All array cells and the data pointer value wraps around upon incrementation or decrementation.
-- For the text-based expression of TaikoLang, `d`, `k`, `D`, `K` is the only valid characters. Other characters including whitespaces, parentheses, and numbers will be omitted.
-- If the total note count is not divisible by 3, the final notes will be omitted as they would not be able to construct a valid 3-note command.
+- For the text-based expression of TaikoLang, `d`, `k`, `D`, `K` are the only valid characters. Other characters including whitespaces, parentheses, and numbers will be ignored.
+- If the total note count is not a multiple of 3, the final notes will be omitted as they would not be able to construct a valid 3-note command.
+
+## Implementation
+Currently this project only takes `.osu` type files (osu! beatmap file format) in taiko mode, for the _true taiko programming expericence_. You may compile any of the following files for the desired conversion. You should use the map editor of the [osu! game client](https://osu.ppy.sh/home/download) (stable) as an IDE for TaikoLang.
+| File Name | Input | Output |
+| --------- | ----- | ------ |
+| `bf_to_tl_converter.cpp` | Brainf*ck code as text | TaikoLang code in conventional text notation |
+| `taikolang_osu.cpp` | `.osu` file of the TaikoLang script (prompted input as file path) | Execution of the script |
+| `taikolang_text.cpp` | TaikoLang script as text-based expressions | Execution of the script |
 
 ## Examples
 ### Hello, World!
@@ -39,7 +47,7 @@ dkd dkd dkd dkd dkd dkd dkd dkd kdd ddd kdd dkd dkd dkd kdd dkk dkk dkk dkk dkk
 dkk kdd dkk dkk dkk dkk dkk dkk dkk dkk kdd ddd dkd kdd
 ```
 
-The full code in the form of an osu!taiko map can be viewed [here](https://twitter.com/ye_osu/status/1487819314124103681?s=20&t=W3yS92ToHIEd26ftLNKEiQ) in my Tweet.
+The full code in the form of an osu!taiko map can be viewed in my [tweet](https://twitter.com/ye_osu/status/1487819314124103681?s=20&t=W3yS92ToHIEd26ftLNKEiQ). You may also _play_ the map in the osu! game client itself!
 
 #### Output
 `Hello, World!`
