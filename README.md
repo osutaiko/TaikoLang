@@ -1,6 +1,7 @@
 # TaikoLang
 TaikoLang is a Brainf*ck-based esoteric programming language using Taiko no Tatsujin (太鼓の達人) maps.
 
+
 ## Language Design
 TaikoLang consists of eight commands, listed below. Scripts written in TaikoLang is interchangeable with equivalent Brainf*ck scripts. Each command is 3 notes long, regardless of timing and spacing. All sliders and spinners will be omitted.
 
@@ -25,6 +26,7 @@ TaikoLang consists of eight commands, listed below. Scripts written in TaikoLang
 - For the text-based expression of TaikoLang, `d`, `k`, `D`, `K` are the only valid characters. Other characters including whitespaces, parentheses, and numbers will be ignored.
 - If the total note count is not a multiple of 3, the final notes will be omitted as they would not be able to construct a valid 3-note command.
 
+
 ## Implementation
 Currently this project only takes `.osu` type files (osu! beatmap file format) in taiko mode, for the _true taiko programming expericence_. You may compile any of the following files for the desired conversion. You should use the map editor of the [osu! game client](https://osu.ppy.sh/home/download) (stable) as an IDE for TaikoLang.
 | File Name | Input | Output |
@@ -32,6 +34,7 @@ Currently this project only takes `.osu` type files (osu! beatmap file format) i
 | `bf_to_tl_converter.cpp` | Brainf*ck code as text | TaikoLang code in conventional text notation |
 | `taikolang_osu.cpp` | `.osu` file of the TaikoLang script (prompted input as file path) | Execution of the script |
 | `taikolang_text.cpp` | TaikoLang script as text-based expressions | Execution of the script |
+
 
 ## Examples
 ### Hello, World!
