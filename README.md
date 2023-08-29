@@ -9,7 +9,7 @@ TaikoLang consists of eight commands, listed below. Scripts written in TaikoLang
 - A data pointer, having a soft boundary of [0, 32767]. However, the value of the data pointer is commonly stored as an `int` type, and will be dealed as such in this implementation.
 
 ### Commands
-| Command | Conventional Taiko Notation | Brainfuck Equivalent | Function |
+| Command | Conventional Taiko Notation | Brainf*ck Equivalent | Function |
 | ------- | --------------------------- | -------------------- | -------- |
 | 🔴🔴🔴 | `ddd` | `>` | Increment the data pointer (to point to the next cell to the right). |
 | 🔴🔴🔵 | `ddk` | `<` | Decrement the data pointer (to point to the next cell to the left). |
