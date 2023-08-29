@@ -48,6 +48,7 @@ dkk kdd dkk dkk dkk dkk dkk dkk dkk dkk kdd ddd dkd kdd
 ```
 
 The full code in the form of an osu!taiko map can be viewed in my [tweet](https://twitter.com/ye_osu/status/1487819314124103681?s=20&t=W3yS92ToHIEd26ftLNKEiQ). You may also _play_ the map in the osu! game client itself!
+- The original osu! map is __[Anamanaguchi - STILL SPLODIN' THO (Interlude)](https://osu.ppy.sh/beatmapsets/104151#taiko/274500)__ mapped by [Liiraye](https://osu.ppy.sh/users/1280641).
 
 #### Output
 `Hello, World!`
