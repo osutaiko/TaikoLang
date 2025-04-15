@@ -3,7 +3,7 @@ TaikoLang is a Brainf*ck-based esoteric programming language using Taiko no Tats
 
 
 ## Language Design
-TaikoLang consists of eight commands, listed below. Scripts written in TaikoLang is interchangeable with equivalent Brainf*ck scripts. Each command is 3 notes long, regardless of timing and spacing. All sliders and spinners will be omitted.
+TaikoLang consists of eight commands, listed below. Scripts written in TaikoLang is interchangeable with equivalent BF scripts. Each command is 3 notes long, regardless of timing and spacing. All sliders and spinners will be omitted.
 
 ### Storage
 - A single array of 32,768 cells, each having a boundary of [0, 255]. This boundary is equivalent to the `unsigned char` type in C/C++.
@@ -31,7 +31,7 @@ TaikoLang consists of eight commands, listed below. Scripts written in TaikoLang
 Currently this project only takes `.osu` type files (osu! beatmap file format) in taiko mode, for the _true taiko programming expericence_. You may compile any of the following files for the desired conversion. You should use the map editor of the [osu! game client](https://osu.ppy.sh/home/download) (stable) as an IDE for TaikoLang.
 | File Name | Input | Output |
 | --------- | ----- | ------ |
-| `bf_to_tl_converter.cpp` | Brainf*ck code as text | TaikoLang code in conventional text notation |
+| `bf_to_tl_converter.cpp` | BF code as text | TaikoLang code in conventional text notation |
 | `taikolang_osu.cpp` | `.osu` file of the TaikoLang script (prompted input as file path) | Execution of the script |
 | `taikolang_text.cpp` | TaikoLang script as text-based expressions | Execution of the script |
 
@@ -50,14 +50,14 @@ dkd dkd dkd dkd dkd dkd dkd dkd kdd ddd kdd dkd dkd dkd kdd dkk dkk dkk dkk dkk
 dkk kdd dkk dkk dkk dkk dkk dkk dkk dkk kdd ddd dkd kdd
 ```
 
-The gameplay video of the full code in the form of an osu!taiko map can be viewed in my [tweet](https://twitter.com/ye_osu/status/1487819314124103681?s=20&t=W3yS92ToHIEd26ftLNKEiQ). You may also _play_ the map in the osu! game client itself!
+The gameplay video of the full code in the form of an osu!taiko map can be viewed in my ~~tweet (deleted)~~. You may also _play_ the map in the osu! game client itself.
 - The original osu! map is __[Anamanaguchi - STILL SPLODIN' THO (Interlude)](https://osu.ppy.sh/beatmapsets/104151#taiko/274500)__ mapped by [Liiraye](https://osu.ppy.sh/users/1280641).
 
 #### Output
 `Hello, World!`
 
-#### In Brainf*ck
-The TaikoLang code is equivalent to the following Brainf*ck script:
+#### In BF
+The TaikoLang code is equivalent to the following BF script:
 ```
 ++++++++++
 [>+++++++>++++++++++>+++>+<<<<-]
